@@ -6,7 +6,7 @@ const tourController = require("./../controllers/tourController")
 router
   .route("/")
   .get(tourController.getAllTours)
-  .post(tourController.postTourMiddleware, tourController.addTour);
+  .post(tourController.addTour);
 
 router
   .route("/:id")
